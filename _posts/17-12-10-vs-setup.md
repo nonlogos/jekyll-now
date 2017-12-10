@@ -4,7 +4,6 @@ title: My Visual Studio Set Up Guide
 categories: setup
 ---
 A list of installation and extensions I like for VS set up.
-
 <!--more-->
 
 ## Initial installation and set up
