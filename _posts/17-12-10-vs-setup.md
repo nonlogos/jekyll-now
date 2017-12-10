@@ -3,7 +3,10 @@ layout: post
 title: My Visual Studio Set Up Guide
 categories: setup
 ---
-A list of installation and extensions I like for VS set up
+A list of installation and extensions I like for VS set up.
+
+<!--more-->
+Out-of-excerpt
 
 ## Initial installation and set up
 [get installed](https://code.visualstudio.com/docs/setup/mac)
