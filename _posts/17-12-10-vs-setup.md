@@ -19,13 +19,3 @@ Quokka.js is a rapid prototyping playground for JavaScript and TypeScript. It ru
 
 ## 15 Essential Extensions for JS Development
 [Review it](http://voidcanvas.com/15-best-essential-vs-code-extensions-for-javascript-development/)
-
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
