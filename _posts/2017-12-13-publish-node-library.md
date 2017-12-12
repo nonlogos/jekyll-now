@@ -69,7 +69,49 @@ compile build script using Babel
 1. open two terminal tabs
   1. one run `npm run dev`
   2. run `npm run test:watch` on the other
-2. develop in the src folder 
+2. develop in the src folder
+
+## Test npm packages locally in another project using npm link
+1. open two terminal tabs
+  1. run `npm run dev` to watch and build as files change
+  2. run `npm link` to allow it to be used locally
+2. in another terminal tab, create a new directory locally
+3. inside the folder, run `npm init -y` to create a new repo with all the default package.json
+4. run `npm link {repo name}` to create a symbolic link to the library
+5. create a file called `index.js` in the new repo
+6. in index.js, require the linked module
+
+{% highlight javascript %}
+// es2015 modules
+import { sensitiveWords } from 'sensitive-words'
+// start using the new module!
+{% endhighlight %}
+
+## Document npm packages using README files
+1. create a readme.md with `touch README.md`
+2. add instruction on how to use this library
+
+## Publish npm packages using npm publish
+1. Add a prepublish script to run build first when we run `npm publish`
+{% highlight jason %}
+"script": {
+  "dev": "watch 'npm run build' src'",
+  "build": "babel src -d build",
+  "test": "jest",
+  "test:watch": "npm test -- --watch",
+  "prepublish": "npm run build"
+}
+"babel": {
+  "presets": ["latest"]
+}
+{% endhighlight %}
+2. create `.npmignore` file
+3. inside that file add the src folder `src`
+4. add user with `npm adduser` to type in our username, password and email
+5. run `npm publish`
+
+## Update published npm packages using np
+
 
 ## Resources
 * [egghead](https://egghead.io/lessons/javascript-add-manifest-files-to-npm-packages-using-npm-init)
