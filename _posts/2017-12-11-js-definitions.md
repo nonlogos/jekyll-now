@@ -6,8 +6,6 @@ categories: setup
 A list of useful JS definitions
 <!--more-->
 
-# Archive of useful JS definitions
-
 ## Javascript Paradigms
 Javascript is a multi-paradigm language
   1. Prototypal inheritance (OOP)
