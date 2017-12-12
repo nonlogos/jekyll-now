@@ -93,7 +93,7 @@ import { sensitiveWords } from 'sensitive-words'
 
 ## Publish npm packages using npm publish
 1. Add a prepublish script to run build first when we run `npm publish`
-{% highlight json %}
+{% highlight javascript %}
 "script": {
   "dev": "watch 'npm run build' src'",
   "build": "babel src -d build",
