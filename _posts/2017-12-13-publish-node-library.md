@@ -4,10 +4,8 @@ title: How to publish a public or private node library
 categories: setup
 ---
 
-Step by step guide to set up a node library and publish it for public or private use
+As we enbrace more on microservices at work, I was tasked to build the new order management feature api as a private (public also included) node library. Here is the step by step guide to how to set one up based on a couple tutorials.
 <!--more-->
-
-As we enbrace more on microservices at work, I was tasked to build the new order management feature api as a private node library. Here is the step by step guide to how to set one up based on a couple tutorials.
 
 ## Set up git repo
 1. create a new git repo
