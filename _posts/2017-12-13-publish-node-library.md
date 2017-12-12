@@ -10,7 +10,7 @@ As we enbrace more on microservices at work, I was tasked to build the new order
 ## Set up git repo
 1. create a new git repo
 2. create a new local folder
-3. in your terminal and inside the local folder, run {% ihighlight javascript %} git init {% endihighlight %}
+3. in your terminal and inside the local folder, run {% highlight javascript %} git init {% endhighlight %}
 4. run `git remote add {url to remote git repo}` to add the remote link to the local repo
 
 ## Add manifest file to npm package using npm init
