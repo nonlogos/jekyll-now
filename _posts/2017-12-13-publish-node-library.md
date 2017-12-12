@@ -10,7 +10,7 @@ As we enbrace more on microservices at work, I was tasked to build the new order
 ## Set up git repo
 1. create a new git repo
 2. create a new local folder
-3. in your terminal and inside the local folder, run {% highlight javascript %} git init {% endhighlight %}
+3. in your terminal and inside the local folder, run *git init*
 4. run `git remote add {url to remote git repo}` to add the remote link to the local repo
 
 ## Add manifest file to npm package using npm init
@@ -111,7 +111,23 @@ import { sensitiveWords } from 'sensitive-words'
 5. run `npm publish`
 
 ## Update published npm packages using np
-
+1. install np with **npm install np --save -dev**
+2. add release script to package.json
+{% highlight javascript %}
+"script": {
+  "dev": "watch 'npm run build' src'",
+  "build": "babel src -d build",
+  "test": "jest",
+  "test:watch": "npm test -- --watch",
+  "prepublish": "npm run build",
+  "release": "np"
+}
+"babel": {
+  "presets": ["latest"]
+}
+{% endhighlight %}
+3. run **npm run release**
+4. follow the instruction and make selections
 
 ## Resources
 * [egghead](https://egghead.io/lessons/javascript-add-manifest-files-to-npm-packages-using-npm-init)
